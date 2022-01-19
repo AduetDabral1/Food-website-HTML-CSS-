@@ -1,0 +1,262 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    }
+
+
+
+/* NavBar: Logo and Images */
+#logo{
+    margin: 2px 11px;
+}
+
+#logo img{
+    height: 50px;
+    margin: 2px 8px;
+}
+
+
+
+/* NavBar: List Styling */
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.82;
+    z-index: -1;
+}
+#navbar ul li{
+    /* color: white; */
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+#navbar ul li a{
+    display: block;
+    padding: 6px 40px;
+    border-radius: 2px;
+    color: white;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    background-color: rgb(235, 215, 176);
+    color: tomato;
+}
+
+
+
+/* HOME Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 75px 250px;
+    height: 550px;
+    top: 0%;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#home::before{
+    content: "";
+    background: url(../images/3.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+#home h1{
+    color: rgb(206, 9, 9);
+    text-align: center;
+}
+
+#home p{
+    color: rgba(42, 27, 177, 0.801);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+
+/* Services Section */
+#services{
+    margin: 3px 20px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid brown;
+    margin: 19px 25px;
+    padding: 12px;
+    height: 560px;
+    background-color: rgb(235, 223, 208);
+    border-radius: 19px;
+}
+
+#services .box img{
+    padding: 17px;
+    height: 180px;
+    display: block;
+    margin: auto;
+}
+
+#services .box p{
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 15px;
+}
+
+
+
+/* CLIENTS Section */
+#client-section{
+    height: 560px;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(../images/1.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+
+}
+.client-items{
+    padding: 25px;
+    /* flex: 33%; */
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img{
+    padding: 9px 19px 7px 39px;
+    height: 190px;
+    width: 340px;
+}
+
+
+/* CONTACT section */
+#contact{
+    margin: 165px 0px 0px 0px;
+    height: 580px;
+    display: block;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(../images/4.jpg) no-repeat center center/cover;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input{
+    width:100%;
+    padding: 0.5rem;
+    border-radius: 7px;
+}
+
+#contact-box textarea{
+    width:100%;
+    padding: 0.5rem;
+    border-radius: 7px;
+}
+
+
+#contact-box form{
+    width:40%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px 9px 20px;
+    margin: 120px 0px 0px 0px;
+}
+
+/* Utility Class */
+.h-primary{
+    font-size: 3.8rem;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 25px 25px 7px 25px;
+    margin: 39px 0px 2px 0px;
+}
+
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 15px;
+}
+
+.btn{
+    padding: 6px 25px;
+    border: 3px solid chocolate;
+    background-color: burlywood;
+    color: whitesmoke;
+    margin: 19px;
+    font-size: 1.4rem;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    padding: 6px 25px;
+    border: 3px solid coral;
+    background-color: rgb(197, 103, 103);
+    color: white;
+    margin: 19px;
+    font-size: 1.4rem;
+    border-radius: 7px;
+}
+
+.center{
+    text-align: center;
+}
